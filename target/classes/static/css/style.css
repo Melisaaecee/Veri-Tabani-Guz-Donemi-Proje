@@ -1,0 +1,182 @@
+/* === GENEL === */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+}
+
+body{
+    background-color: #f4f6f8;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(113, 51, 200, 0.08),
+            rgba(113, 51, 200, 0.08) 10px,
+            transparent 10px,
+            transparent 20px
+        );
+}
+
+/* === GİRİŞ EKRANI === */
+
+/* Ortada dursun */
+.center-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Giriş paneli */
+.login-panel {
+    width: 380px;
+    background-color: #c198ff;
+    padding: 35px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Inputlar alt alta */
+.login-panel input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+/* Focus */
+.login-panel input:focus {
+    outline: none;
+    border-color: #7133c8;
+    box-shadow: 0 0 0 2px rgba(113, 51, 200, 0.25);
+}
+
+/* Giriş butonu  */
+.login-panel button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #7133c8, #a86aff);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-panel button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* === USER PANEL === */
+.user-panel {
+    width: 500px;
+    max-width: 95%;
+    padding: 30px 25px;
+    background-color: #c198ff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0;
+}
+
+/* veri gelince genişlesin */
+.user-panel.expanded {
+    width: 1000px;
+    /* tablo gelince GENİŞ */
+    max-width: 95%;
+}
+
+/* === MENU === */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+}
+
+/* butona basınca: yan yana */
+.menu.horizontal {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Menü butonları */
+.menu button {
+    width: 100%;
+    max-width: 220px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #7133c8;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu.horizontal button {
+    width: auto;
+    padding: 10px 18px;
+}
+
+.menu button:hover {
+    background: #5e28a6;
+    transform: translateY(-1px);
+}
+
+/* === TABLOLAR === */
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    background-color: white;
+}
+
+.data-table th,
+.data-table td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #7133c8;
+    color: white;
+}
+
+.data-table tr:hover {
+    background-color: #f1e6ff;
+}
+
+
+/* === AKSİYON BUTON === */
+.btn-odunc {
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-iade {
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
