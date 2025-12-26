@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin Panel</title>
+        <link rel="icon" href="/images/kitapicon.png" type="image/png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Admin Paneli</h1>
+            <button onclick="logout()">Çıkış Yap</button>
+
+            <h2>Kitaplar</h2>
+            <table id="kitapTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Ad</th>
+                    <th>Stok</th>
+                    <th>Kategori</th>
+                    <th>Yazar</th>
+                    <th>Sil</th>
+                </tr>
+            </table>
+            <button onclick="showAddKitapForm()">Kitap Ekle</button>
+        </div>
+        <script src="/js/api.js"></script>
+        <script src="/js/admin.js"></script>
+    </body>
+
+</html>
