@@ -8,8 +8,6 @@ import com.kutuphane.akillikutuphane.Service.KategoriService;
 
 @RestController
 @RequestMapping("/api/kategori")
-// @PreAuthorize("hasRole('ADMIN')")
-
 public class KategoriController {
 
     private final KategoriService kategoriService;
