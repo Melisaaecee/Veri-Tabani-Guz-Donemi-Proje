@@ -57,7 +57,6 @@ public class OduncAlmaSistemiService {
                 .orElseThrow(() -> new RuntimeException("Ödünç bulunamadı"));
 
         Kitap kitap = odunc.getKitap();
-        kitap.setStokAdedi(kitap.getStokAdedi() + 1);
         odunc.setGercekIadeTarihi(LocalDate.now());
         odunc.setDurum(false);
 
