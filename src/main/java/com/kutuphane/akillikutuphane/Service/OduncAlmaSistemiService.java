@@ -39,8 +39,6 @@ public class OduncAlmaSistemiService {
         if (kitap.getStokAdedi() <= 0)
             throw new RuntimeException("Stokta kitap yok");
 
-        kitap.setStokAdedi(kitap.getStokAdedi() - 1);
-
         OduncAlmaSistemi odunc = new OduncAlmaSistemi();
         odunc.setKitap(kitap);
         odunc.setKullanici(kullanici);
